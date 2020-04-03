@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Caveat', cursive;
+    padding: 0;
+     margin: 0;
+    text-decoration: none;
+    width: auto;
+    height: 100%;
+    background-image: url(https://bit.ly/2wRkxkP);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: large;
+    }
+
+    .navbar-nav ul li{
+        display: inline-block;
+        text-align: right;
+        text-decoration: none;
+        font-family:'Varela Round' ;
+    }
+    .nav-item{
+        padding-left: 20px;
+    }
+    .navbar-nav{
+        cursor: pointer;
+        transition: opacity, 2s In · Cubic;
+        color: black;
+        align-items: center;
+        opacity: 1.5;
+        font-size: 20px;
+    }
+    
+    .card-img-top{
+        height: 220px;
+    }
+   
