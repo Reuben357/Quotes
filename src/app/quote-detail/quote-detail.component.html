@@ -1,4 +1,6 @@
 <p>{{quote.description}}</p>
+<p> {{quote.name}}</p>
+<p>{{quote.completeDate|date}}</p>
 <p>This quote was posted on {{quote.completeDate|date|uppercase  }} </p>
 <br>
 <button class="btn btn-success"  id="like" (click)='countLikeclick()'>{{ quote.clickCounter}}   <i class="fa fa-thumbs-up"></i></button><br>

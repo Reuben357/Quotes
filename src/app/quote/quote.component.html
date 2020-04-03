@@ -1,6 +1,3 @@
-
-
-
 <section class="py-5">
   <div *ngFor='let quote of quotes; let i = index'>
     <div class="continer my-5">
@@ -9,7 +6,7 @@
           <div class="item-container">
             <h2>QUOTE</h2>
             <div class="card">
-              <img class="card-img-top" src= "https://bit.ly/2R8REaL" alt="Card image" style="width:100%">
+              <img class="card-img-top" [src]= "url" alt="Card image" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title" id={{i}} appStrikethrough>{{quote.name}}</h4>
 
@@ -27,8 +24,10 @@
         </div>
       </div>
     </div>
-    <div> 
-      <!-- <app-goal-form (addQuote)="addNewQuote($event)"></app-goal-form> -->
-      <app-goal-form></app-goal-form>
+    <div>  
+<app-goal-form (addQuote)="addNewQuote($event)"></app-goal-form>
     </div>
 </section>
+
+
+ 
