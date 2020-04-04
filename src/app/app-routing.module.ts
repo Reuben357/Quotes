@@ -4,21 +4,7 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
 import { QuoteComponent } from './quote/quote.component';
 
 
-const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: '/quote',
-  //   pathMatch: 'full'
-  // },
-  // {
-  //   path: 'goal-form',
-  //   component:GoalFormComponent
-  // },
-  // {
-  //   path: 'quote',
-  //   component:QuoteComponent
-  // },
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

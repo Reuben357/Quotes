@@ -6,7 +6,7 @@
           <div class="item-container">
             <h2>QUOTE</h2>
             <div class="card">
-              <img class="card-img-top" [src]= "url" alt="Card image" style="width:100%">
+              <img class="card-img-top" src="" alt="Card image" style="width:100%">
               <div class="card-body">
                 <h4 class="card-title" id={{i}} appStrikethrough>{{quote.name}}</h4>
 
@@ -16,18 +16,15 @@
                   <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
                   </app-quote-detail>
                 </div>
-                </div>
               </div>
             </div>
-            <br>
           </div>
+          <br>
         </div>
       </div>
     </div>
-    <div>  
-<app-goal-form (addQuote)="addNewQuote($event)"></app-goal-form>
-    </div>
+  </div>
+  <div>
+    <app-goal-form (addQuote)="addNewQuote($event)"></app-goal-form>
+  </div>
 </section>
-
-
- 

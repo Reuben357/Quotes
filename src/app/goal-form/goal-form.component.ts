@@ -11,10 +11,10 @@ export class GoalFormComponent implements OnInit {
 
   qoute_image: File = null;
 
-  /*fileUpload(event){
+  fileUpload(event){
     this.qoute_image = event.target.files[0];
 
-  }*/
+  }
 
   newQuote =new Quote(0, "","", null, new Date(),0,0);
   @Output() addQuote = new EventEmitter<Quote>();
