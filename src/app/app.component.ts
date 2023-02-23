@@ -8,6 +8,6 @@ import {Quote} from './quote';
 })
 export class AppComponent {
   title = 'Quotes';
-  quotes:Quote[]=[ ];
+  quotes: Quote[] = [ ];
 
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { Quote } from './../quote';
+import { Quote } from '../quote';
 
 
 @Component({
@@ -9,22 +9,23 @@ import { Quote } from './../quote';
 })
 export class GoalFormComponent implements OnInit {
 
+  constructor() { }
+
+  // tslint:disable-next-line:variable-name
   qoute_image: File = null;
 
-  fileUpload(event){
+  newQuote = new Quote(0, '', '', null, new Date(), 0, 0);
+  @Output() addQuote = new EventEmitter<Quote>();
+
+  fileUpload(event) {
     this.qoute_image = event.target.files[0];
 
   }
 
-  newQuote =new Quote(0, "","", null, new Date(),0,0);
-  @Output() addQuote = new EventEmitter<Quote>();
-
-  submitQuote(){
+  submitQuote() {
     this.addQuote.emit(this.newQuote);
-    this.newQuote = new Quote( 0,'','',null, new Date(),0,0);
+    this.newQuote = new Quote( 0, '', '', null, new Date(), 0, 0);
       }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

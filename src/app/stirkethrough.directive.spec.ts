@@ -1,7 +1,8 @@
-import { StirkethroughDirective } from './stirkethrough.directive';
+import {StrikethroughDirective } from './stirkethrough.directive';
 
-describe('StirkethroughDirective', () => {
+describe('StrikethroughDirective', () => {
   it('should create an instance', () => {
+    // @ts-ignore
     const directive = new StirkethroughDirective();
     expect(directive).toBeTruthy();
   });

@@ -8,22 +8,22 @@ import {Quote} from '../quote';
   styleUrls: ['./quote-detail.component.css']
 })
 export class QuoteDetailComponent implements OnInit {
-  @Input()quote:Quote;
+  @Input()quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
 
-  
-  clickCounter:number=0;
-clickCounter1:number=0;
 
-countLikeclick(){
-  this.quote.clickCounter +=1;
+  clickCounter = 0;
+clickCounter1 = 0;
+
+countLikeclick() {
+  this.quote.clickCounter += 1;
 }
 
-countDislikeclick(){
-  this.quote.clickCounter1 +=1
+countDislikeclick() {
+  this.quote.clickCounter1 += 1;
 }
-  quoteDelete(complete:boolean){
+  quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
 

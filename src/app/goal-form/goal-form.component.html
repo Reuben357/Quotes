@@ -1,12 +1,12 @@
 <div class="jumbotron">
     <div class="container-fluid ">
-        <h2 class="text-center">Write a Qoute</h2>
+        <h2 class="text-center">Write a Quote</h2>
         <hr>
         <form (ngSubmit)='submitQuote()' #goalForm='ngForm'>
             <div class="form-group">
 
                 <label for="name">Name</label>
-                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"
+                <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name"
                     #name='ngModel' required>
 
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
